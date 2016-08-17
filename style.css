@@ -1,0 +1,37 @@
+h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+p {
+  font-size: 24px
+}
+
+li {
+  font-size:20px;
+}
+header {
+  font-size: 50px;
+  font-family: serif;
+  font-weight: bolder;
+  background-color: #ee3e80;
+  text-align: center;
+}
+body {
+  background-image: url(bk.jpg);
+  background-repeat: no-repeat;
+  background-size: 150x200px;
+  background-position: center;
+  background-image: linear-gradient();
+}
+ul>li {
+  font-weight: bold;
+  color: white;
+}
+figure>a, li>a {
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+}
+figcaption {
+  font-size: 20px;
+}
