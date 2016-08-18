@@ -3,7 +3,7 @@ var user = prompt('Greeting, what is your name?');
 console.log(user);
 
 alert('Welcome ' + user + '!');
-
+// quesiton 1
 var question = prompt('Want to play some games now?');
 console.log(question);
 
@@ -14,24 +14,27 @@ if ( question.toLowerCase() === 'y') {
   console.log(question);
   alert('Oh man! Too bad, we are playing games anyway!');
 };
-
+// question 2
 var color = ['Red' , 'Blue' , 'White' , 'Black', 'Brown'];
 var answer = prompt('Fun time!!What is my favorite color?');
 console.log(color);
 var count = 0;
+var guess = 0;
 
-for (var i = 0; i < color.length; i++) {
-  console.log(answer[i]);
-
-  if (color[i] === 'Red') {
-    alert('YES! ', color , ' is a POP of color. My fav too!');
-    break;
-  } else {
-    alert('Keep trying');
-    count++;
+while ( guess < 6) {
+  answer = prompt('Fun time!!What is my favorite color?');
+  for (var i = 0; i < color.length; i++) {
+    console.log(answer[i]);
+    if (color[i] === 'Red') {
+      alert('YES! ', color , ' is a POP of color. My fav too!');
+      break;
+    } else {
+      alert('Keep trying');
+      count++;
+    };
   };
 };
-
+// question 4
 var code = prompt('Next, is coding fun? Please type in Y or N');
 console.log(code);
 
@@ -41,12 +44,13 @@ if (code === 'Y') {
   console.log('Keep going!');
 };
 
-var workWork = prompt('Do you think I find it lots of work, learning how to code?true or false');
+// question 4
+var workWork = prompt('Is learning how to code hard?true or false');
 console.log(workWork);
 if ( true || 't') {
-  console.log('Yes, it is!');
+  alert('Yes, it is!');
 } else {
-  console.log('Show me what your trick is making it easy to learn coding!!');
+  alert('Show me what your trick is making it easy to learn coding!!');
 };
 
 var good = prompt('I know coding is hard, but I will be successful. Right?');
