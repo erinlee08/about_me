@@ -1,5 +1,6 @@
 'use strict';
-var user = prompt('Greeting, what is your name?');
+var user;
+user = prompt('Greeting, what is your name?');
 console.log(user);
 
 alert('Welcome ' + user + '!');
@@ -7,7 +8,7 @@ alert('Welcome ' + user + '!');
 var question = prompt('Want to play some games now?');
 console.log(question);
 
-if ( question.toLowerCase() === 'y') {
+if ( question.toLowerCase() === 'y' || question.toLowerCase() === 'Y' ) {
   console.log(question);
   alert('Great!');
 } else {
