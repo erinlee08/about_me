@@ -8,7 +8,7 @@ var question;
 function questionOne(){                        //question one function decleared.
   question = prompt('Want to play some games now?');
   console.log(question);
-  if ( question.toLowerCase() === 'y') {
+  if (question.toUpperCase === 'Y' || question === 'y' || question.toUpperCase === 'YES' || question === 'yes') {                   //error catching for "question"
     console.log(question);
     alert('Great!');
   } else {
@@ -41,7 +41,7 @@ shades();                      //function shades called
 var code = prompt('Next, is coding fun? Please type in Y or N');
 console.log(code);
 
-if (code === 'Y') {
+if (code.toUpperCase === 'Y' || code === 'y' || code.toUpperCase === 'YES' ||code === 'yes') {                       //error catching code
   console.log('So far it is!!');
 } else {
   console.log('Keep going!');
