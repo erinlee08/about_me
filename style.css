@@ -19,11 +19,10 @@ header {
 body {
   background-image: url(bk.jpg);
   background-repeat: no-repeat;
-  background-size: 150x200px;
+  background-size: 500px, 500px;
   background-position: center;
-  background-image: linear-gradient();
 }
-ul>li {
+ul li {
   font-weight: bold;
   color: white;
 }
