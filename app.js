@@ -7,16 +7,17 @@ alert('Welcome ' + user + '!');
 var question = prompt('Want to play some games now?');
 console.log(question);
 
-if (question.toLowerCase() === 'y') {
-  console.log('Great!');
+if ( question.toLowerCase() === 'y') {
+  console.log(question);
+  alert('Great!');
 } else {
-  console.log('Oh man! Too bad, we are playing games anyway!');
+  console.log(question);
+  alert('Oh man! Too bad, we are playing games anyway!');
 };
 
 var color = ['Red' , 'Blue' , 'White' , 'Black', 'Brown'];
 var answer = prompt('Fun time!!What is my favorite color?');
 console.log(color);
-var flag;
 var count = 0;
 
 for (var i = 0; i < color.length; i++) {
@@ -24,44 +25,54 @@ for (var i = 0; i < color.length; i++) {
 
   if (color[i] === 'Red') {
     alert('YES! ', color , ' is a POP of color. My fav too!');
-    flag;
+    break;
   } else {
     alert('Keep trying');
     count++;
   };
 };
 
-var code = prompt('Next, is coding fun?');
+var code = prompt('Next, is coding fun? Please type in Y or N');
 console.log(code);
 
 if (code === 'Y') {
-  console.log(user, 'So far it is!!');
+  console.log('So far it is!!');
 } else {
   console.log('Keep going!');
 };
 
-var workWork = prompt('Do you think I find it lots of working, learning how to code?tur or false');
+var workWork = prompt('Do you think I find it lots of work, learning how to code?true or false');
 console.log(workWork);
-if (true) {
+if ( true || 't') {
   console.log('Yes, it is!');
 } else {
   console.log('Show me what your trick is making it easy to learn coding!!');
 };
 
-}
-var work = prompt('Besides coding, I was in dental field for a while. Guess how long I have been doing that?');
-console.log(work);
+var good = prompt('I know coding is hard, but I will be successful. Right?');
+console.log(good);
+if( good === 'Y' || good === 't') {
+  console.log(good);
+  alert('I think so too!');
+} else {
+  console.log(good);
+  alert('boo!');
+};
 
-if (work >= 2) {
+
+var year = prompt('Besides coding, I was in dental field for a while. Guess how long I have been doing that? Please enter a number');
+console.log(year);
+
+if ( i >= 2) {
   alert('Guessed too low');
   count++;
-} else if (work >= 4) {
+} else if ( i >= 4) {
   alert('Getting warmer!');
   count++;
-} else if (work > 8) {
+} else if (i > 8) {
   alert('Whoa,, guessed too high!');
   count++;
-}else if (work === 8 ) {
+} else if (i === 8 ) {
   alert('Bingo!');
   count++;
 } else {
