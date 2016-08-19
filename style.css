@@ -2,15 +2,23 @@ h1 {
   font-weight: bold;
   font-size: 30px;
 }
-p {
-  font-size: 24px
+h2 {
+  font-size: 26px;
 }
-
-li {
-  font-size:20px;
+h2 li {
+  font-size: 22px
+}
+ul li  {
+  font-weight: bold;
+}
+li a {
+  font-size: 20px
+}
+p {
+  font-size: 20px
 }
 header {
-  font-size: 50px;
+  font-size: 60px;
   font-family: serif;
   font-weight: bolder;
   background-color: #ee3e80;
@@ -18,20 +26,19 @@ header {
 }
 body {
   background-image: url(bk.jpg);
-  background-repeat: no-repeat;
-  background-size: 500px, 500px;
+  background-size: 500px 550px;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FF9A82;
 }
-ul li {
-  font-weight: bold;
-  color: white;
-}
-figure>a, li>a {
-  color: black;
+
+footer a: hover {
+  color:transparent;
+  display: inline-block;
+  text-align: center;
   font-weight: bolder;
-  font-size: 20px;
-  display: block;
 }
-figcaption {
-  font-size: 20px;
+div {
+  text-align: center;
+
 }
