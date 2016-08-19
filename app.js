@@ -32,8 +32,8 @@ var code = prompt('Next, is coding fun? Please type in Y or N');
 console.log(code);
 if (code === 'Y') {
   alert('So far it is!!');
-
-function shades(){                                             //function shades defined.
+}
+function shades() {                                             //function shades defined.
   for (var i = 0; i < color.length; i++) {
     console.log(answer[i]);
 
@@ -43,9 +43,9 @@ function shades(){                                             //function shades
     } else {
       alert('Keep trying');
       count++;
-    };
-  };
-};
+    }
+  }
+}
 shades();                      //function shades called
 
 var code = prompt('Next, is coding fun? Please type in Y or N');
