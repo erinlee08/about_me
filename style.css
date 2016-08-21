@@ -4,67 +4,60 @@
   }
   header {
   font-size: 60px;
-  font-family:cursive;;
   font-weight: bolder;
-  background-color: #888;
   text-align: center;
+  color: #771654;
 }
 div.bod {
-border: 4px double #542262;
-padding: 20px;
+border: 6px double #542262;
+padding: 40px;
 }
 body {
-  /*background-color: #FF9A82;*/
   font-family: cursive;
-}
-/*div.side {
-  display: block;
-  position: absolute;
-  float: left;
-  width: 100px;
-  height: auto;
-  background-color: black;
-}*/
-span.bot li{
-  font-size: 22px;
+  color: #281654;
 }
 h1 {
   font-weight: bold;
   font-size: 30px;
   text-align: center;
 }
-h1 span a {
-  width: 100px;
-  height: 150 px;
+h1 span {
+  width: 150px;
   float: left;
-  display: inline;
-  margin: 0px 4px;
+  display: block;
+  font-size:20px;
 }
-div.side {
-  min-width: 10%;
-  max-width: 20%;
-  position: absolute;
-  background-color: purple;
-}
-span {
+/*span {
   text-align: center;
   display: block;
-}
-h2 {
-  font-size: 26px;
-}
-h2 li {
-  font-size: 22px
-  text-align:center;
-}
-/*ul li  {
-  font-weight: bold;
 }*/
-a:hover {
+/*Midsec*/
+.mid {
+  display: block;
+  float: left;
+  width: 20%;
+  overflow: clear;
+}
+h3 {
+  font-size: 24px;
+}
+h3 li a:hover {
   font-size: 20px;
   text-decoration: none;
 }
-p {
-  font-size: 20px;
-  text-align: center;
+h3 ul li {
+  font-size: 18px;
+}
+/*end of midsec*/
+a:hover {
+  text-decoration: none;
+}
+/*span {
+  float: left;
+  display: block;
+  outline: dotted 1px red;
+}
+span.bot {
+  display: block;
+  float: left;*/
 }
