@@ -1,15 +1,11 @@
 'use strict';
-var user;
-user = prompt('Greeting, what is your name?');
+var user = prompt('Greeting, what is your name?');
 console.log(user);
 
 alert('Welcome ' + user + '!');
 
-var question;
-
-function questionOne(){                        //question one function decleared.
-  question = prompt('Want to play some games now?');
-
+var question = prompt('Want to play some games now?');
+function questionOne(){                        //question one function decleared
   console.log(question);
   if (question.toUpperCase === 'Y' || question === 'y' || question.toUpperCase === 'YES' || question === 'yes') {                   //error catching for "question"
     console.log(question);
@@ -19,53 +15,50 @@ function questionOne(){                        //question one function decleared
     alert('Oh man! Too bad, we are playing games anyway!');
   };
 };
-
 questionOne();                                   //question one called.
 
-var color = ['Red' , 'Blue' , 'White' , 'Black', 'Brown'];
-var answer;
-console.log(color);
+var answer = prompt('What is my fav color?');
 var guess = 0;
-var flag = false;
-// question 3
-var code = prompt('Next, is coding fun? Please type in Y or N');
-console.log(code);
-if (code === 'Y') {
-  alert('So far it is!!');
-}
-function shades() {                                             //function shades defined.
-  for (var i = 0; i < color.length; i++) {
-    console.log(answer[i]);
 
-    if (color[i] === 'Red') {
-      alert('YES! ', color , ' is a POP of color. My fav too!');
+function favColor() {            //user has 5 tries to get the right answer
+  while (guess < 5) {
+    if (answer === 'Red' || answer === 'red') {
+      console.log(answer);
+      alert('Great!You got it');
       break;
+      guess++;
     } else {
-      alert('Keep trying');
-      count++;
+      alert('keep going!');
+      answer = prompt('What is my fav color?');
+      guess++;
     }
   }
-}
-shades();                      //function shades called
+};
+favColor();                //fx 2 called
 
 var code = prompt('Next, is coding fun? Please type in Y or N');
-console.log(code);
+function coding() {
+  if (code === 'Y' || code === 'y') {
+    console.log(code);
+    alert('So far it is!!');
+  } else if (code === NaN ) {
+    console.log(code);
+    alert('Please type in Y or N');
+  } else {
+    console.log(code);
+    alert('Takes some getting used to');
+}
+coding();      //fx 3 created and called
 
-if (code.toUpperCase === 'Y' || code === 'y' || code.toUpperCase === 'YES' ||code === 'yes') {                       //error catching code
-  console.log('So far it is!!');
-} else {
-  console.log('Keep going!');
-};
-// question 4
-var work = prompt('Is learning how to code hard?true or false');
+var work = prompt('Learing to code is hardwork. What do you think ?true or false');
 console.log(work);
-if ( true || 't') {
+if ( true || work === 't' || work === 'T') {
   alert('Yes, it is!');
 } else {
   alert('Show me what your trick is making it easy to learn coding!!');
 };
 //question 5
-var fun = prompt('I know coding is hard, but it can also be fun, Right?');
+var fun = prompt('I know coding is hard, but it will be worth it, Right?');
 console.log(fun);
 if( fun === 'Y' || fun === 't') {
   console.log(fun);
@@ -79,20 +72,25 @@ if( fun === 'Y' || fun === 't') {
 var year = prompt('Besides coding, I was in dental field for a while. Guess how long I have been doing that? Please enter a number');
 console.log(year);
 
-var i;
-if (i >= 2) {
-  alert('Guessed too low');
-  count++;
-} else if ( i >= 4) {
-  alert('Getting warmer!');
-  count++;
-} else if (i > 8) {
-  alert('Whoa,, guessed too high!');
-  count++;
-} else if (i === 8 ) {
-  alert('Bingo!');
-  count++;
-} else {
-  alert('Keep trying!');
-  count++;
-}
+function yearDen() {
+for (var i = 0; i < 4; i++) {
+  console.log(i);
+  if (i >= 2) {
+    alert('Guessed too low');
+    guess++;
+  } else if ( i < 7) {
+    alert('Getting warmer!');
+    guess++;
+  } else if (i > 8) {
+    alert('Whoa,, guessed too high!');
+    guess++;
+  } else if (i === 8 ) {
+    alert('Bingo!');
+    guess++;
+    break;
+  } else {
+    alert('Keep trying!');
+    guess++;
+  }
+};
+// yearDen();
