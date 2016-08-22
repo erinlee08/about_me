@@ -1,12 +1,12 @@
 
-* {
+/** {
   outline: dotted 1px black;
-  }
+  }*/
   header {
   font-size: 60px;
   font-weight: bolder;
   text-align: center;
-  color: #771654;
+  color: #DF212C;
 }
 div.bod {
 border: 6px double #542262;
@@ -14,7 +14,12 @@ padding: 40px;
 }
 body {
   font-family: cursive;
-  color: #281654;
+  /*background-color: #B7BFB1;*/
+  color: #C8331A;
+  background-image: url(bk.jpg);
+  background-size: 74%;
+  background-repeat: no-repeat;
+  background-position: center;;
 }
 h1 {
   font-weight: bold;
@@ -23,14 +28,17 @@ h1 {
 }
 h1 span {
   width: 150px;
-  float: left;
+  float: right;
   display: block;
   font-size:20px;
+}
+h1 span a {
+  color: #C83398;
+  font-weight: bolder;;
 }
 span {
   text-align: center;
   display: block;
-  font-weight: bolder;
 }
 /*Midsec*/
 .mid {
@@ -42,24 +50,35 @@ span {
 h3 {
   font-size: 24px;
   text-align: center;
+  border: 3px;;
+  color: white;
 }
 li a:hover {
   font-size: 18px;
   text-decoration: none;
+  font-weight: bolder;
+  color: #C83398;
 }
 ul li {
   font-size: 20px;
   text-align: center;
-}
-a:hover {
-  text-decoration: none;
 }
 .bot {
   font-size: 24px;
   margin-top: 30px;
   display: block;
 }
-ul {
-  font-size: 20px;
+ul a {
+  font-size: 16px;
   text-align: center;
+  font-weight: bolder;;
+  color: #C83398;
+}
+.bot a {
+  font-size: 18px;
+  font-weight: bolder;;
+  color: #C83398;
+}
+ul {
+  font-size: 16px;
 }
